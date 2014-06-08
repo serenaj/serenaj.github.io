@@ -1,0 +1,171 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  background-color: #FFF;
+  font: 13.34px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: small;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+a         { color: #00a; }
+a:hover   { color: #000; }
+a:visited { color: #a0a; }
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.posts li {
+  line-height: 1.75em;
+}
+
+.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 30em;
+  margin: 1em auto 2em;
+  line-height: 1.5em;
+}
+
+.meta {
+  color: #aaa;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+/* serena's site fun */
+
+.title {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  text-rendering: optimizeLegibility;
+  font-size: 140px;
+  line-height: 1;
+
+  text-align: center;
+  margin:  0;
+  padding: 0;
+  padding-bottom: 26px;
+}
+
+a.simple-link {
+  color: #08c;
+  text-decoration: none;
+}
+
+a.simple-link:visited {
+  color: #08c;
+}
+
+a.simple-link:hover {
+  text-decoration: underline;
+}
+
+.avatar-container {
+  text-align: center;
+}
+
+.avatar {
+  margin: 0 auto;
+  width: 256px;
+  height: 256px;
+  border-radius: 128px;
+}
+
+.contact-info {
+  width: 17em;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    padding: 0 20px;
+  }
+
+  .site {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 90px;
+    padding-bottom: 13px;
+  }
+
+  .avatar {
+    width: 256px;
+    height: 256px;
+  }
+}
